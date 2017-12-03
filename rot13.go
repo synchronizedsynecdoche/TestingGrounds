@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 	"bufio"
 	"os"
 )
@@ -23,11 +22,11 @@ func main() {
 
 			if string(userIn[i]) == alph[j]{
 
-				out += alph[ int(math.Mod(float64(j + i+1), 26))]
+				out += alph[ (j + i+1) % 26]
 			}
 			if string(userIn[i]) == alphBig[j]{
 
-				out += alph[ int(math.Mod(float64(j + i+1), 26))]
+				out += alphBig[(j + i+1) % 26 ]
 			}
 		}
 
