@@ -18,7 +18,7 @@ void enroll(student *s, int stat){
 		}
 	}
 
-int main(int argc, char* argv[])}{
+int main(int argc, char* argv[]){
 	
 	student *s = malloc(sizeof(student));
 
