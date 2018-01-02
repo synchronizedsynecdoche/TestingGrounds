@@ -27,10 +27,10 @@ int main(int argc, char* argv[]){
 	s->gpa = -1;
 	enroll(s, 0);
 	
-	printf("%s : %d : %d", s->name, s->gpa, s->isEnrolled);
+	printf("%s : %d : %d\n", s->name, s->gpa, s->isEnrolled);
 	
-	//not freeing to see what it looks like under valgrind
-	
+	free(s);
+
 	return 0;
 
 	}
