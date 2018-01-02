@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct {
 
@@ -22,11 +23,11 @@ int main(int argc, char* argv[]){
 	
 	student *s = malloc(sizeof(student));
 
-	s.name = "Patrick";
-	s.gpa = -1;
+	s->name = "Patrick";
+	s->gpa = -1;
 	enroll(&s, 0);
 	
-	printf("%s : %d : %d", s.name, s.gpa, s.isEnrolled);
+	printf("%s : %d : %d", s->name, s->gpa, s->isEnrolled);
 	
 	//not freeing to see what it looks like under valgrind
 	
