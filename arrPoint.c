@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 //create a dynamic array for student IDs and GPAs
 
@@ -22,7 +23,7 @@ int main(int argc, char* argv[]){
 	table[3][0] = 34232;
 	table[3][1] = 1.00;
 	
-	for(i=0; i < count; i++{
+	for(i=0; i < count; i++){
 		
 		print("Student: %d has %d\n",table[i][0],table[i,1]
 	}
