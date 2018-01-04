@@ -25,7 +25,7 @@ int main(int argc, char* argv[]){
 	
 	for(i=0; i < count; i++){
 		
-		print("Student: %d has %d\n",table[i][0],table[i,1]
+		printf("Student: %d has %d\n",table[i][0],table[i,1]
 	}
 	
 	free(table[0]);
