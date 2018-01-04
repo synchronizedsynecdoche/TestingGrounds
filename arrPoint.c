@@ -4,7 +4,8 @@
 //create a dynamic array for student IDs and GPAs
 
 int main(int argc, char* argv[]){
-
+	
+	int i;
 	double idLen = 5;
 	int count = 4; //4 students
 	double gpa = 0.0;
@@ -25,7 +26,7 @@ int main(int argc, char* argv[]){
 	
 	for(i=0; i < count; i++){
 		
-		printf("Student: %d has %d\n",table[i][0],table[i,1]
+		printf("Student: %d has %d\n",table[i][0],table[i,1]);
 	}
 	
 	free(table[0]);
