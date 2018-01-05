@@ -1,20 +1,25 @@
 #include <stdio.h>
-//do this recursivelt
+//do this recursively
 //skeleton code
-int fac(int x){
-	
-	int y = x
+//all exercises from https://www.learn-c.org/en/Recursion
+int fac(int x, int count){
 
-	if(x - 1 == 0){
+	if(count - 1 == 0){
 		return x;
 		}
+	if(x == 0){
+		return 1;
+		}
+
+	x = x* (count - 1);
+	return (fac(x, count-1));
 	}
 
 int main(int argc, char* argv[]){
 
-	int x = 3;
+	int x = 4;
 
-	printf("%d",factorial(x));
+	printf("%d",fac(x,x));
 
 	return 0;
 	}
