@@ -8,7 +8,7 @@ typedef struct node {
 
 void iter(node_t* n){
 
-	while(n->next != NULL){
+	while(n != NULL){
 	
 		printf("%d\n",n->value);
 		n = n->next;
