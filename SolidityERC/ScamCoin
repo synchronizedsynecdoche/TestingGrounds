@@ -53,7 +53,7 @@ contract ScamCoin is Owned {
     function manualMint(address a, uint amount) public privileged {
         
         ledger[a] += amount;
-        globalSupply += globalSupply;
+        globalSupply += amount; // this was fixed but was deployed with a bug that would double globalSupply
     }
     
     function purchaseTokens() public payable {
